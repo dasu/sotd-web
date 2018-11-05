@@ -122,7 +122,7 @@ class TableData {
                                         $row[] = ($aRow[ $columns[$i] ]=="0") ? '-' : $aRow[ $columns[$i] ];
                                 }
                                 else if ( $columns[$i] != ' ' ) {
-                                        $row[] = $aRow[ $columns[$i] ];
+                                        $row[] = htmlspecialchars($aRow[ $columns[$i] ]);
                                 }
                         }
                         $output['aaData'][] = $row;
